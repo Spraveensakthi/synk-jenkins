@@ -9,7 +9,7 @@ pipeline {
       project = ''
       credential= ''
     }
-  agent {label 'Built-In Node'}
+  agent any
   stages {
       stage("Environment Selection"){
         steps {
