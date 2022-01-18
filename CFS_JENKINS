@@ -10,7 +10,7 @@ pipeline {
         stage("Starting Process"){
             steps {
                 script {
-			gke_ci_imagebuilding{
+			GKE_CI_ImageBuilding.groovy{
 			imageName = "${imageName}"
 		 	branchName = "${branchName}"
             }
